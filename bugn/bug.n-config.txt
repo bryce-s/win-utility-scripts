@@ -1,0 +1,37 @@
+; # ctrl + e opens this
+;Config_readinCpu=0
+;Config_readinDate=1
+;Config_readinDiskLoad=0
+;Config_readinMemoryUsage=0
+;Config_readinNetworkLoad=0
+;Config_readinTime=1
+
+Config_readinTimeFormat=hh:mm
+
+
+
+
+
+
+; exclude wox launcher.
+Config_rule=.*HwndWrapper.*;Wox;;0;0;0;0;0;0;
+Config_rule=.*hap.exe.*;;;0;0;0;0;0;0;
+
+Config_rule=Warhammer2;Total War: WARHAMMER 2;;0;0;0;0;0;0;
+
+; win ctrl o : manually manage win10 metro apps.
+Config_hotkey=#^o::Manager_override(1;0;0;0;1;0;)
+
+Config_fontName=DejaVu Sans Mono
+Config_fontSize=10
+
+Config_backColor_#1=101010;603000;Black;603000;Black;603000;000060;404040;080808
+Config_backColor_#2=808080;;;;;;;202020;080808
+;; Config_backColor_#3=;;;;;;;ff8040;
+Config_foreColor_#1=404040;101010;Black;101010;Black;101010;Black;404040;202020
+Config_foreColor_#2=4040ff;;;;;;;0000ff;0000ff
+Config_foreColor_#3=;;;;;;;010101;
+Config_fontColor_#1=White;White;White;White;White;White;White;Black;808080
+Config_fontColor_#2=Black;;;;;;;White;White
+Config_fontColor_#3=;;;;;;;Black;
+
