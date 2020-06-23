@@ -138,6 +138,8 @@ switchDesktopByNumber(targetDesktop)
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
     _switchDesktopToTarget(targetDesktop)
+    Send !{Esc}
+
 }
 
 switchDesktopToLastOpened()
@@ -145,6 +147,8 @@ switchDesktopToLastOpened()
     global CurrentDesktop, DesktopCount, LastOpenedDesktop
     updateGlobalVariables()
     _switchDesktopToTarget(LastOpenedDesktop)
+    Send !{Esc}
+
 }
 
 switchDesktopToRight()
@@ -152,6 +156,7 @@ switchDesktopToRight()
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
     _switchDesktopToTarget(CurrentDesktop == DesktopCount ? 1 : CurrentDesktop + 1)
+    Send !{Esc}
 }
 
 switchDesktopToLeft()
@@ -159,6 +164,7 @@ switchDesktopToLeft()
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
     _switchDesktopToTarget(CurrentDesktop == 1 ? DesktopCount : CurrentDesktop - 1)
+    Send !{Esc}
 }
 
 focusTheForemostWindow(targetDesktop) {
