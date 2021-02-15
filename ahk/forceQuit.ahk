@@ -9,8 +9,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 WinGetTitle, Title, A
 PostMessage, 0x112, 0xF060,,, %Title%
 
-^m:: ; ctrl+m, minimize active window
-WinGetTitle, Title, A
-PostMessage, 0x112, 0xF020,,, %Title%
+; ^m:: ; ctrl+m, minimize active window
+; WinGetTitle, Title, A
+; PostMessage, 0x112, 0xF020,,, %Title%
 
 return
